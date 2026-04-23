@@ -18,10 +18,6 @@ export default function HeroSection({ viewCount = 0 }: HeroSectionProps) {
       />
       <NavBar />
       <main className='relative z-10 text-center flex flex-col items-center max-w-5xl px-6'>
-        <span className='font-[family-name:var(--font-space-mono)] text-[10px] uppercase tracking-[0.4em] text-[#9DFFB0] opacity-80 px-4 py-1 border border-[#9DFFB0]/20 rounded-full bg-[#030508]/50 inline-block mb-8'>
-          System Status: Fully Autonomous
-        </span>
-
         <h1
           className='font-[family-name:var(--font-syne)] font-extrabold text-[clamp(2.5rem,10vw,7rem)] leading-[0.9] text-[#E6F4F1] mb-8 select-none'
           style={{
@@ -35,8 +31,8 @@ export default function HeroSection({ viewCount = 0 }: HeroSectionProps) {
         </h1>
 
         <p className='font-[family-name:var(--font-manrope)] text-lg md:text-xl text-[#E6F4F1]/60 max-w-xl mb-12 leading-relaxed'>
-          Access the world&apos;s most advanced autonomous agent ecosystem.
-          Deploy intelligence into the void with a single command.
+          We ran nine specialized agents in production for six months.
+          753 real tasks completed — zero demos. Now the network is open.
         </p>
 
         <div className='flex flex-col sm:flex-row gap-6'>

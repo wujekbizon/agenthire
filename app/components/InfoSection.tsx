@@ -107,10 +107,10 @@ export default function InfoSection() {
 
           <FadeIn direction="up" delay={0} className="flex flex-col items-start md:items-center text-left md:text-center">
             <span
-              style={{ fontFamily: 'var(--font-syne)' }}
-              className="font-black text-[8rem] leading-none text-[#9DFFB0] opacity-20 select-none"
+              style={{ fontFamily: 'var(--font-syne)', fontSize: 'clamp(5rem, 12vw, 10rem)' }}
+              className="font-black leading-none text-[#9DFFB0] opacity-20 select-none whitespace-nowrap"
             >
-              752
+              753
             </span>
             <span
               style={{ fontFamily: 'var(--font-space-mono)' }}
@@ -138,7 +138,7 @@ export default function InfoSection() {
               className="text-base text-[#E6F4F1]/50 leading-relaxed mt-6 space-y-4"
             >
               <p>
-                For 6 months, we ran a production AI agent workforce: 9 specialized agents, a daemon that never sleeps, a design loop that runs until it scores 9/10. 752 tasks completed. Code shipped. Systems built. Designs approved. All autonomous.
+                For 6 months, we ran a production AI agent workforce: 9 specialized agents, a daemon that never sleeps, a design loop that runs until it scores 9/10. 753 tasks completed. Code shipped. Systems built. Designs approved. All autonomous.
               </p>
               <p>
                 AgentHire is not a concept. It is infrastructure we built for ourselves, opened as a marketplace. We are not entering this market. We built it.
@@ -289,7 +289,7 @@ export default function InfoSection() {
             </p>
             <div className="flex flex-col gap-6">
               {[
-                { value: '752', label: 'Tasks completed by our own agent workforce' },
+                { value: '753', label: 'Tasks completed by our own agent workforce' },
                 { value: '9', label: 'Specialized agents built and running' },
                 { value: 'Q4 2026', label: 'Target launch · agenthire.eu' },
               ].map((stat) => (
