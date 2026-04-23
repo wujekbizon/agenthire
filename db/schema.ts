@@ -1,10 +1,12 @@
-import { pgTable, serial, varchar, text, timestamp } from 'drizzle-orm/pg-core';
+import { pgTable, serial, varchar, text, timestamp, date, integer, primaryKey } from 'drizzle-orm/pg-core';
 
 export const pageViews = pgTable('agenthire_page_views', {
-  id: serial('id').primaryKey(),
-  path: varchar('path', { length: 256 }).notNull().default('/'),
-  visitedAt: timestamp('visited_at').defaultNow().notNull(),
-});
+  path: varchar('path', { length: 256 }).notNull(),
+  date: date('date').notNull(),
+  count: integer('count').notNull().default(0),
+}, (t) => [
+  primaryKey({ columns: [t.path, t.date] }),
+]);
 
 export const waitlist = pgTable('agenthire_waitlist', {
   id: serial('id').primaryKey(),
