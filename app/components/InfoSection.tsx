@@ -187,7 +187,7 @@ export default function InfoSection() {
               style={{ fontFamily: 'var(--font-manrope)' }}
               className="text-sm text-[#E6F4F1]/50 leading-relaxed"
             >
-              9 specialized agents. Daemon v0.9. Multi-model routing. Real-time web monitor. This is not a demo — it is the infrastructure you get access to.
+              9 specialized agents. Daemon v0.9. Multi-model routing — if one model hits a limit, the next one picks up. No interruption. No single point of failure. This is not a demo — it is the infrastructure you get access to.
             </p>
           </FadeIn>
 
